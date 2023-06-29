@@ -1,0 +1,31 @@
+{
+  "name": "psoxy-oauth-setup-tool",
+  "version": "0.0.1",
+  "description": "OAuth helper tool to ease Worklytics pseudonimization proxy (psoxy) setup",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Worklytics/psoxy-oauth-setup-tool.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Worklytics/psoxy-oauth-setup-tool/issues"
+  },
+  "homepage": "https://github.com/Worklytics/psoxy-oauth-setup-tool#readme",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "enquirer": "^2.3.6",
+    "express": "^4.18.2",
+    "nanoid": "^4.0.2",
+    "open": "^9.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "2.8.8"
+  }
+}
