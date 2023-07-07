@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import enquirer from 'enquirer';
 import { printPsoxySetupData } from './lib/utils.mjs';
 import { OAuthJiraCloudHelper } from './lib/oauth-jira-cloud.mjs';
@@ -56,14 +57,13 @@ async function processJiraCloud() {
   const cloudURL = await cloudURLPrompt.run();
 
   const clientId = await new enquirer.Input({
-    message: 'Client ID',
+    message:
+      'Enter the Client ID of the OAuth 2.0 App you’ve registered in your Jira Cloud instance',
     required: true,
   }).run();
 
-  // Not using a "password" type prompt since this is intended to be run locally
-  // and the user will get the secret back as output
-  const clientSecret = await new enquirer.Input({
-    message: 'Client Secret',
+  const clientSecret = await new enquirer.Password({
+    message: 'Enter the Client Secret of the OAuth 2.0 App',
     required: true,
   }).run();
 
@@ -104,12 +104,12 @@ async function processGitHub() {
     )}: Please, enter the following settings of your GitHub App:`
   );
   const clientId = await new enquirer.Input({
-    message: 'Client ID',
+    message: 'Enter the Client ID of the GitHub App you’ve registered',
     required: true,
   }).run();
 
-  const clientSecret = await new enquirer.Input({
-    message: 'Client Secret',
+  const clientSecret = await new enquirer.Password({
+    message: 'Enter the Client Secret of the GitHub App',
     required: true,
   }).run();
 
