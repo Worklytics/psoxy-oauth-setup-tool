@@ -21,7 +21,7 @@ async function processJiraCloud() {
   const oauthRedirectURL = await jira.start();
 
   const installAppMessage = `
-    Please, create a new OAuth 2.0 App (3LO) in your Jira Cloud instance (or use and existing one) and enter the following value in the ${chalk.bold(
+    Please, create a new OAuth 2.0 App (3LO) in your Jira Cloud instance (or use and existing one with the appropriate scopes) and enter the following value in the ${chalk.bold(
       'Callback URL'
     )} field: ${chalk.blue.bold(oauthRedirectURL)}
   `;
@@ -84,7 +84,7 @@ async function processGitHub() {
   const oauthRedirectURL = await github.start();
 
   const installAppMessage = `
-    Please, create a new GitHub App in your GitHub's organization (or use and existing one) and enter the following value in the ${chalk.bold(
+    Please, create a new GitHub App in your GitHub's organization (or use and existing one with the appropriate permissions) and enter the following value in the ${chalk.bold(
       'Callback URL'
     )} field: ${chalk.blue.bold(oauthRedirectURL)}
   `;
