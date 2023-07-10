@@ -1,4 +1,4 @@
-# Worklytics Psoxy setup OAuth tool
+# Worklytics Psoxy OAuth setup tool
 
 This tool helps you to set up and configure your [Worklytics Psoxy](https://github.com/Worklytics/psoxy) instances to 
 work with Jira Cloud as data source.
