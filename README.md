@@ -23,7 +23,7 @@ Since this tool works interactively, is intended to be executed directly from th
 appropriate to add it as a dependency to your project. We recommend to install it globally:
 
 ```shell
-npm install psoxy-setup-oauth-tool -g
+npm install git+https://github.com/Worklytics/psoxy-oauth-setup-tool -g
 ```
 
 ## Usage
