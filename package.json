@@ -16,7 +16,7 @@
     "url": "https://github.com/Worklytics/psoxy-oauth-setup-tool/issues"
   },
   "homepage": "https://github.com/Worklytics/psoxy-oauth-setup-tool#readme",
-  "bin":  "./index.mjs",
+  "bin": "./index.mjs",
   "dependencies": {
     "chalk": "^5.2.0",
     "enquirer": "^2.3.6",
