@@ -104,7 +104,7 @@ async function processGitHub() {
     )}: Please, enter the following settings of your GitHub App:`
   );
   const clientId = await new enquirer.Input({
-    message: 'Enter the Client ID of the GitHub App you’ve registered',
+    message: 'Enter the Client ID of the GitHub App you\'ve registered',
     required: true,
   }).run();
 
