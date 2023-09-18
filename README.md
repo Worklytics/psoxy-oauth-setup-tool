@@ -11,7 +11,7 @@ To be able to complete your Worklytics Psoxy deployment you need an
 from those sources. 
 
 Both data sources work in a similar way, to get these tokens you need to create 
-an OAuth 2.0 integration in your Jira Cloud instance (or GitHub acocunt) with 
+an OAuth 2.0 integration in your Jira Cloud instance (or GitHub account) with 
 the appropriate permissions (scopes), perform an authentication flow
 and then an authorization flow to finally get the tokens. 
 
@@ -26,8 +26,9 @@ get the tokens and other values you need to complete your Psoxy deployment confi
 Prerequisites: Node.js >= 18, NPM >= 8. 
 Install it with [npm](https://www.npmjs.com/):
 
-Since this tool works interactively, is intended to be executed directly from the command line, and it's not
-appropriate to add it as a dependency to your project. We recommend to install it globally:
+Since this tool works interactively, is intended to be executed directly from 
+the command line, and it's not appropriate to add it as a dependency to your 
+project. We recommend to install it globally:
 
 ```shell
 npm install git+https://github.com/Worklytics/psoxy-oauth-setup-tool -g
@@ -35,8 +36,8 @@ npm install git+https://github.com/Worklytics/psoxy-oauth-setup-tool -g
 
 ## Usage
 
-Run the tool and answer the questions you'll be prompted with (such as the Jira Cloud Client ID value of the 
-OAuth integration you've created):
+Run the tool and answer the questions you'll be prompted with (such as the Jira 
+Cloud Client ID value of the OAuth integration you've created):
 
 ```shell
 npx psoxy-setup-oauth-tool
