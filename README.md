@@ -45,3 +45,23 @@ npx psoxy-setup-oauth-tool
 
 [Worklytics Psoxy]: https://github.com/Worklytics/psoxy
 [Worklytics Psoxy documentation]: https://github.com/Worklytics/psoxy/blob/main/docs/sources/atlassian/jira-cloud.md
+
+## Development
+
+You can also run the tool directly from your local clone:
+
+1. Clone the repository:
+   ```shell
+   git clone https://github.com/Worklytics/psoxy-oauth-setup-tool.git
+   cd psoxy-oauth-setup-tool
+   ```
+
+2. Install dependencies:
+   ```shell
+   npm install
+   ```
+
+3. Run the tool:
+   ```shell
+   node index.mjs
+   ```
