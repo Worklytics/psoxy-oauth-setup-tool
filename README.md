@@ -63,5 +63,5 @@ You can also run the tool directly from your local clone:
 
 3. Run the tool:
    ```shell
-   node index.ts
+   node index.mjs
    ```
