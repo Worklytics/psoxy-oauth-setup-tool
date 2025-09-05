@@ -8,7 +8,7 @@ to work with the following data sources:
 
 To complete your Worklytics Proxy deployment, you need secret values such as an access_token and a refresh_token, or a client_id and client_secret. These values allow your Psoxy to fetch data from those sources.
 
-All these data sources use a similar process. To obtain the tokens, you must create an OAuth 2.0 integration in your Jira Cloud instance (or GitHub account) with the proper permissions (scopes). Then, you perform an authentication flow followed by an authorization flow to get the tokens.
+All these data sources use a similar process. To obtain the tokens, you must create an OAuth 2.0 integration in your Jira/Confluence Cloud instance (or GitHub account) with the proper permissions (scopes). Then, you perform an authentication flow followed by an authorization flow to get the tokens.
 
 As explained in the [Worklytics Proxy documentation] (Jira Cloud use case), this process can be tricky and time-consuming if done manually. Because Jira Cloud uses OAuth 2.0 (3LO), running this tool lets you complete both the authentication and authorization flows from the command line. It then outputs the tokens and other values you need to finish your Worklytics Proxy deployment configuration.
 
