@@ -1,25 +1,16 @@
-# Worklytics Psoxy OAuth setup tool
+# Worklytics Pseudonymizing Proxy – OAuth Setup Tool
 
-This tool helps you to set up and configure your [Worklytics Psoxy] instances 
-to work with the following data sources: 
+This tool helps you set up and configure your [Worklytics Pseudonymizing Proxy] instances
+to work with the following data sources:
+ - Atlassian Confluence Cloud
+ - Atlassian Jira Cloud
+ - GitHub
 
-- GitHub
-- Jira Cloud
+To complete your Worklytics Proxy deployment, you need secret values such as an access_token and a refresh_token, or a client_id and client_secret. These values allow your Psoxy to fetch data from those sources.
 
-To be able to complete your Worklytics Psoxy deployment you need an 
-`access_token` and a `refresh_token` that your Psoxy will use to fetch data 
-from those sources. 
+All these data sources use a similar process. To obtain the tokens, you must create an OAuth 2.0 integration in your Jira Cloud instance (or GitHub account) with the proper permissions (scopes). Then, you perform an authentication flow followed by an authorization flow to get the tokens.
 
-Both data sources work in a similar way, to get these tokens you need to create 
-an OAuth 2.0 integration in your Jira Cloud instance (or GitHub account) with 
-the appropriate permissions (scopes), perform an authentication flow
-and then an authorization flow to finally get the tokens. 
-
-As we explain in the [Worklytics Psoxy documentation] (Jira Cloud use-case) 
-this process can be a bit tricky and time-consuming if done manually. Since 
-Jira Cloud uses OAuth 2.0 (3LO), by running this tool, you will be able to 
-complete the authentication and authorization flows from the command line, and 
-get the tokens and other values you need to complete your Psoxy deployment configuration as output.
+As explained in the [Worklytics Proxy documentation] (Jira Cloud use case), this process can be tricky and time-consuming if done manually. Because Jira Cloud uses OAuth 2.0 (3LO), running this tool lets you complete both the authentication and authorization flows from the command line. It then outputs the tokens and other values you need to finish your Worklytics Proxy deployment configuration.
 
 ## Install
 
@@ -43,9 +34,6 @@ Cloud Client ID value of the OAuth integration you've created):
 npx psoxy-setup-oauth-tool
 ```
 
-[Worklytics Psoxy]: https://github.com/Worklytics/psoxy
-[Worklytics Psoxy documentation]: https://github.com/Worklytics/psoxy/blob/main/docs/sources/atlassian/jira-cloud.md
-
 ## Development
 
 You can also run the tool directly from your local clone:
@@ -65,3 +53,6 @@ You can also run the tool directly from your local clone:
    ```shell
    node index.mjs
    ```
+
+[Worklytics Pseudonymizing Proxy]: https://docs.worklytics.co/psoxy
+[Worklytics Proxy documentation]: https://docs.worklytics.co/psoxy/sources/atlassian/jira
