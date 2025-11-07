@@ -31,7 +31,7 @@ Run the tool and answer the questions you'll be prompted with (such as the Jira
 Cloud Client ID value of the OAuth integration you've created):
 
 ```shell
-npx psoxy-setup-oauth-tool
+npx psoxy-oauth-setup-tool
 ```
 
 ## Development
