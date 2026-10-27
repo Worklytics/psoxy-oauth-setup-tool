@@ -14,7 +14,7 @@ As explained in the [Worklytics Proxy documentation] (Jira/Confluence Cloud use 
 
 ## Install
 
-Prerequisites: Node.js >= 18, NPM >= 8. 
+Prerequisites: Node.js >= 22, npm >= 10 (bundled with Node.js). 
 Install it with [npm](https://www.npmjs.com/):
 
 Since this tool works interactively, is intended to be executed directly from 
